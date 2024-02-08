@@ -1,4 +1,4 @@
-# **Verlet Integration** 
+# **Velocity Verlet Algorithms** 
 Theoretical Background: 
 -	The Verlet Integration, also known as the Verlet algorithm, is a numerical method used to solve Newton's equations of motion for systems of particles. 
 -	It is particularly popular in molecular dynamics simulations for its simplicity and excellent energy conservation properties. 
