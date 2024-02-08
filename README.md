@@ -8,11 +8,11 @@
 -	Consider a particle with position **r(t)** at time **t** and let **Δt** be a small-time increment. 
 -	The position of the particle at time **t+Δt** can be expanded as:
 
-![Verlet Integration  algorithm equation](Picture1.png)
+![Verlet Integration  algorithm equation](eqs/Picture1.png)
 
 -	Similarly, the position of the particle at time **t − Δt** can be expanded as:
 
-![Verlet Integration  algorithm equation](Picture2.png)
+![Verlet Integration  algorithm equation](eqs/Picture2.png)
 
 -	where **v(t)** is the velocity of the particle at time **t**, and
 -	 **a(t)** is its acceleration due to forces acting upon it. 
@@ -20,7 +20,7 @@
 
 -	By adding these two equations, the terms involving **v(t)** cancel out, and the error term is of a higher order, which is typically ignored for small **Δt**, leading to:
 
-![Verlet Integration  algorithm equation](Picture3.png)
+![Verlet Integration  algorithm equation](eqs/Picture3.png)
 
 
 where: 
@@ -52,26 +52,26 @@ Force Calculation:
 -	Consider a particle with position **r(t)** and velocity **v(t)** at time **t**, subject to an acceleration **a(t)** due to forces acting on it according to Newton's second law. 
 -	The position of the particle at a future time **t + Δt** can be expanded using the Taylor series as:
 
-![Verlet Integration  algorithm equation](Picture4.png)
+![Verlet Integration  algorithm equation](eqs/Picture4.png)
 
 -	Similarly, the velocity v(t + Δt) can be expanded as:
 
-![Verlet Integration  algorithm equation](Picture5.png)
+![Verlet Integration  algorithm equation](eqs/Picture5.png)
 
 -	The Velocity Verlet algorithm refines this by incorporating the acceleration at **t + Δt** into the velocity update, splitting the velocity update into two half-steps:
 1.	First, it partially updates the velocity using the acceleration at the start of the time step:
 
-![Verlet Integration  algorithm equation](Picture6.png)
+![Verlet Integration  algorithm equation](eqs/Picture6.png)
 
 2.	Then, it updates the position using this partially updated velocity:
 
-![Verlet Integration  algorithm equation](Picture7.png)
+![Verlet Integration  algorithm equation](eqs/Picture7.png)
 
 3.	After updating the position, the new acceleration **a(t+ Δt)** is calculated based on the forces at the new position.
 
 4.	Finally, it completes the velocity update with
 
-![Verlet Integration  algorithm equation](Picture8.png)
+![Verlet Integration  algorithm equation](eqs/Picture8.png)
 
 
 
