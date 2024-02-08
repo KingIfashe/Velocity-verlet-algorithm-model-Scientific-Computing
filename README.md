@@ -2,7 +2,7 @@
 ## **Theoretical Background:** 
 -	The [Verlet Integration](https://www.algorithm-archive.org/contents/verlet_integration/verlet_integration.html), also known as the Verlet algorithm, is a numerical method used to solve Newton's equations of motion for systems of particles. 
 -	It is  popular in molecular dynamics simulations for its simplicity and excellent energy conservation properties. 
-## **Derivation and Mathematical Formulation**
+## **Derivation**
 -	The core idea behind the Verlet Integration is to compute the positions of particles at a future time step using only their current positions, the positions at a previous time step, and the net forces currently acting on them (which are used to compute acceleration). 
 -	This approach stems from the second-order Taylor expansions of the position of a particle.
 -	Consider a particle with position **r(t)** at time **t** and let **Δt** be a small-time increment. 
@@ -47,7 +47,7 @@ Force Calculation:
 # **Velocity Verlet Algorithm:**
 -	The Velocity Verlet algorithm is an extension of the Verlet algorithm, designed to explicitly calculate both positions and velocities of particles at each time step, offering a good balance between computational efficiency, accuracy, and ease of implementation. 
 
-## **Theoretical Background: **
+## Theoretical Background:
 -	The Velocity Verlet algorithm can be derived from the Taylor series expansion of particle positions and velocities. 
 -	Consider a particle with position **r(t)** and velocity **v(t)** at time **t**, subject to an acceleration **a(t)** due to forces acting on it according to Newton's second law. 
 -	The position of the particle at a future time **t + Δt** can be expanded using the Taylor series as:
