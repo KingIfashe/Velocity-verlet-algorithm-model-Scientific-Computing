@@ -7,6 +7,7 @@
 -	This approach stems from the second-order Taylor expansions of the position of a particle.
 -	Consider a particle with position r ⃗ (t) at time t and let Δt be a small-time increment. 
 -	The position of the particle at time t+Δt can be expanded as:
+
 !(/Picture 1.png)
 
 
