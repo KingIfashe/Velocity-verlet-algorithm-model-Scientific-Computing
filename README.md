@@ -1,7 +1,5 @@
 Verlet Integration 
 Theoretical Background: 
--	Verlet Integration is used for its simplicity and excellent long-term energy conservation.
--	It calculates the position of particles in a system at a future time step using only the current position, the position at the previous time step, and the current acceleration.
 -	The Verlet Integration, also known as the Verlet algorithm, is a numerical method used to solve Newton's equations of motion for systems of particles. 
 -	It is particularly popular in molecular dynamics simulations for its simplicity and excellent energy conservation properties. 
 Derivation and Mathematical Formulation
