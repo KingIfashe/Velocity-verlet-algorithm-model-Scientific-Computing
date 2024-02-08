@@ -8,6 +8,6 @@
 -	Consider a particle with position r ⃗ (t) at time t and let Δt be a small-time increment. 
 -	The position of the particle at time t+Δt can be expanded as:
 
-!(/Picture 1.png)
+![General verlet algorithm equation](/Picture 1.png)
 
 
