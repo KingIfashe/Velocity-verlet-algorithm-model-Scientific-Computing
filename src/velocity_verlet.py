@@ -23,8 +23,8 @@ def velocity_verlet(positions, velocities, dt, steps):
 
 if __name__ == "__main__":
     # Initial conditions
-    positions = np.array([[0.0, 10.0], [0.0, 20.0]])  # Initial positions of two particles
-    velocities = np.array([[5.0, 0.0], [-5.0, 0.0]])  # Initial velocities
+    positions = np.array([[0.0, 10.0], [0.0, 20.0]])  # Initial positions of two particles (m)
+    velocities = np.array([[5.0, 0.0], [-5.0, 0.0]])  # Initial velocities (m/s)
     dt = 0.01  # Time step in seconds
     steps = 100  # Number of steps to simulate
 
@@ -32,15 +32,15 @@ if __name__ == "__main__":
     trajectory = velocity_verlet(positions, velocities, dt, steps)
 
     # Print the final positions
-    print("Final positions:\n", trajectory[-1])
+    print("Final positions (m):\n", trajectory[-1])
 
     # Plot the trajectory
     plt.figure(figsize=(8, 6))
     for i in range(trajectory.shape[1]):
         plt.plot(trajectory[:, i, 0], trajectory[:, i, 1], label=f'Particle {i+1}')
-    plt.xlabel('X Position')
-    plt.ylabel('Y Position')
-    plt.title('Particle Trajectories')
+    plt.xlabel('X Position (m)')
+    plt.ylabel('Y Position (m)')
+    plt.title('Particle Trajectories with Velocity Verlet Integration')
     plt.legend()
     plt.show()
 

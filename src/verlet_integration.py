@@ -7,7 +7,7 @@ def acceleration(positions):
     """Simple gravitational acceleration towards the negative y-axis as an example."""
     g = -9.81  # Gravity acceleration in m/s^2
     acc = np.zeros_like(positions, dtype=float)  # Ensure positions are float
-    acc[:, 1] = g  # Apply gravity only in the y-direction
+    acc[:, 1] = g  # # Apply gravity only in the y-direction (m/s^2)
     return acc
 
 def verlet_integration(positions, velocities, dt, steps):
@@ -37,14 +37,14 @@ if __name__ == "__main__":
     trajectory = verlet_integration(positions, velocities, dt, steps)
 
     # Print the final positions of the particles
-    print("Final positions:\n", trajectory[-1])
+    print("Final positions (m):\n", trajectory[-1])
 
     # Optional: Plot the trajectory
     plt.figure(figsize=(8, 6))
     for i in range(trajectory.shape[1]):
         plt.plot(trajectory[:, i, 0], trajectory[:, i, 1], label=f'Particle {i+1}')
-    plt.xlabel('X Position')
-    plt.ylabel('Y Position')
+    plt.xlabel('X Position (m)')
+    plt.ylabel('Y Position (m)')
     plt.title('Particle Trajectories')
     plt.legend()
     plt.show()
