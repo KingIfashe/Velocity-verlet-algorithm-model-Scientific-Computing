@@ -74,8 +74,50 @@ Force Calculation:
 ![Verlet Integration  algorithm equation](eqs/Picture8.png)
 
 
+# **Implementation for Verlet Integration (verlet_integration.py)**
+This Python script implements the Verlet Integration algorithm. 
 
+### Key Features
+-	Implements Verlet Integration for systems of particles in a multi-dimensional space.
+-	Incorporates a simple gravitational force acting towards the negative y-axis as an example of an external force.
+-	Includes an example usage block that simulates the motion of two particles under gravity, prints their final positions, and plots their trajectories.
 
+### Prerequisites
+-	Python 3.x
+-	NumPy
+-	Matplotlib (for plotting trajectories)
 
+### How to run
+-	Ensure Python 3.x, NumPy, and Matplotlib are installed in your environment.
+-	Save the script as verlet_integration.py
+-	Run the script using Python: python verlet_integration.py
+-	The script will output the final positions of the particles and display a plot of their trajectories over time.
 
+### Example Output 
+-	After simulating their motion under gravity for a specified number of steps, the console will print the final positions of two particles.
+-	A plot showing the trajectories of these particles will be displayed.
+
+# **Implementation for Velocity Verlet Integration (velocity_verlet.py)**
+This Python script demonstrates the Velocity Verlet Integration algorithm. 
+
+### Key Features
+-	Utilises the Velocity Verlet Integration method for multi-dimensional particle systems.
+-	Imports and uses a simple gravitational acceleration function from verlet_integration.py to simulate forces acting on particles.
+-	Features an example block that simulates two particles under gravity, prints their final positions, and visualises their trajectories.
+
+### Prerequisites
+-	Python 3.x
+-	NumPy
+-	Matplotlib (for plotting trajectories)
+-	verlet_integration.py (for the acceleration function)
+
+### How to Run
+-	Make sure Python 3.x, NumPy, and Matplotlib are installed and that verlet_integration.py is in the same directory or the Python path.
+-	Save this script as velocity_verlet.py.
+-	Execute the script: python velocity_verlet.py
+-	The script outputs the final positions of the simulated particles and a plot of their trajectories during the simulation.
+
+### Example Output
+-	The script prints the final positions of two simulated particles to the console.
+-	A graphical plot showing the paths these particles take illustrates gravity's effect on their motion.
 
